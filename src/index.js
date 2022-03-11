@@ -5,10 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+<Router basename={process.env.PUBLIC_URL}>
+  <App />
+</Router>
 );
 
 // If you want to start measuring performance in your app, pass a function
